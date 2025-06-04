@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CrossHairFollow : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class CrossHairFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Mouse.current == null)
+        {
+            return;
+        }
+        Vector2 mousePos = Mouse.current.position.ReadValue();
+        crossHairRect.position = mousePos;
     }
 }
