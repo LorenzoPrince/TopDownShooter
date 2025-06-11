@@ -5,7 +5,7 @@ public class NewBestWeapon : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float bulletSpeed = 20f;
-    public float fireRate = 0.2f;
+    public float fireRate = 0.5f;
 
     public float nextFireTime = 0;
 
