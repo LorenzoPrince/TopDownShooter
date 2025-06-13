@@ -13,7 +13,7 @@ public class HealthEnemy : MonoBehaviour
     {
         HUDCanvas = GameObject.Find("HUD").GetComponent<Canvas>();
         // Suscribirse al evento de la bala
-        Bullet.OnHit += OnBulletHit;
+        //Bullet.OnHit += OnBulletHit;
     }
 
     void Start()
@@ -33,7 +33,7 @@ public class HealthEnemy : MonoBehaviour
     private void OnDestroy()
     {
         // Desuscribirse para evitar memory leaks
-        Bullet.OnHit -= OnBulletHit;
+       // Bullet.OnHit -= OnBulletHit;
 
         if (enemyUIClone != null)
             Destroy(enemyUIClone);
