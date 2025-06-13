@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 6854743447135086942}
   gravityForce: 0
-  movementSpeed: 1
+  movementSpeed: 4.21
   movementInput: {x: 0, y: 0}
   mousePosition: {x: 0, y: 0}
   lookTarget: {x: 0, y: 0, z: 0}
@@ -192,8 +192,8 @@ MonoBehaviour:
     m_ActionName: 'TPPlayer/MouseLook[/Mouse/position]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NewBestWeapon, Assembly-CSharp
+      - m_Target: {fileID: 2256083976458299973}
+        m_TargetAssemblyTypeName: ShootingPlayer, Assembly-CSharp
         m_MethodName: Onfire
         m_Mode: 0
         m_Arguments:
